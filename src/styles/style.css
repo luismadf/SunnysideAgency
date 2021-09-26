@@ -4,6 +4,7 @@
   --font-title: "Fraunces", serif;
   --font-text: "Barlow", sans-serif;
   --grayish-blue: hsl(210, 4%, 67%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
 }
 
@@ -74,12 +75,82 @@ nav ul li:last-of-type a {
   text-transform: uppercase;
   font-family: var(--font-title);
   margin-left: 50px;
-  font-size: 18px;
+  font-size: 15px;
+  color: #333;
+  background-color: white;
+  padding: 15px 24px;
+  border-radius: 25px;
 }
 
 .hero h2 {
   color: white;
-  font-size: 42px;
+  font-size: 46px;
   margin-top: 5%;
+  letter-spacing: 8px;
+  font-weight: 900;
   text-transform: uppercase;
+}
+
+.cta__section,
+.services__section {
+  width: 100%;
+  display: flex;
+}
+
+.cta__section div,
+.services__section div {
+  width: 50%;
+}
+
+.cta__section--wrapper {
+  margin: 120px auto;
+  max-width: 400px;
+}
+
+.cta__section--wrapper h3 {
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.cta__section--wrapper p {
+  color: var(--dark-grayish-blue);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.cta__section--wrapper a {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+.egg__bg {
+  background-image: url("../images/desktop/image-transform.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: #ffd302;
+  background-size: contain;
+}
+
+.cup__bg {
+  background-image: url("../images/desktop/image-stand-out.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #ff806f;
+  background-size: contain;
+}
+
+.graphic__section {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-color: #a1decf;
+  height: 800px;
 }
