@@ -37,6 +37,7 @@ a {
 
 ul {
   display: flex;
+  justify-content: space-around;
 }
 
 li {
@@ -59,61 +60,8 @@ nav .container {
   padding: 30px 0px;
 }
 
-header .hero {
-  background: url("../images/desktop/image-header.jpg");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  min-height: 400px;
-}
-
 nav ul {
   display: none;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-text);
-  font-size: 18px;
-  color: var(--dark-grayish-blue);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--font-title);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  list-style: none;
-}
-
-header {
-  background-color: #3ebfff;
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0;
 }
 
 nav ul li a {
@@ -144,16 +92,17 @@ header .hero {
   height: 100%;
   display: flex;
   justify-content: center;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .hero h2 {
   color: white;
   font-size: 36px;
-  margin-top: 20%;
+  margin-top: 15%;
   letter-spacing: 8px;
   font-weight: 900;
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 /********** CTA SECTION **********/
@@ -192,13 +141,37 @@ header .hero {
   margin-bottom: 24px;
 }
 
-.cta__section--wrapper a {
+.button {
+  position: relative;
   color: var(--very-dark-desaturated-blue);
   font-size: 16px;
   text-transform: uppercase;
   font-family: var(--font-title);
   font-weight: 900;
-  text-decoration: underline;
+}
+
+.button__underline--yellow::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -6px;
+  width: 110%;
+  height: 10px;
+  border-radius: 15px;
+  background-color: rgba(249, 212, 0, 0.3);
+  z-index: -1;
+}
+
+.button__underline--red::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -6px;
+  width: 110%;
+  height: 10px;
+  border-radius: 15px;
+  background-color: rgba(254, 120, 102, 0.3);
+  z-index: -1;
 }
 
 .egg__bg {
@@ -381,10 +354,21 @@ footer svg path {
   fill: var(--dark-moderate-cyan);
 }
 
-footer ul li {
+.footer__list--menu {
+  width: 80%;
+}
+
+.footer__list--menu li {
   color: var(--dark-moderate-cyan);
-  margin-bottom: 24px;
   font-size: 16px;
-  margin: 0 30px;
-  margin-bottom: 24px;
+  margin-bottom: 60px;
+}
+
+.footer__list--social {
+  width: 50%;
+}
+
+.footer__list--social li {
+  color: var(--dark-moderate-cyan);
+  margin-bottom: 30px;
 }
