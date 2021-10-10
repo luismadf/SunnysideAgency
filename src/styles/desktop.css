@@ -44,117 +44,8 @@ li {
 }
 
 .container {
-  width: 1140px;
-  max-width: 90%;
+  max-width: 1140px;
   margin: 0 auto;
-}
-
-header {
-  background-color: #3ebfff;
-}
-
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0px;
-}
-
-header .hero {
-  background: url("../images/desktop/image-header.jpg");
-  background-position: bottom;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  min-height: 400px;
-}
-
-nav ul {
-  display: none;
-}
-
-header .hero {
-  background-size: cover;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 36px;
-}
-
-.cta__section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "top"
-    "bottom";
-}
-
-.top {
-  grid-area: top;
-}
-
-.cta__section div,
-.services__section div {
-  width: 100%;
-}
-
-.cta__section--wrapper {
-  text-align: center;
-  margin: 60px 0;
-  max-width: unset;
-}
-
-.egg__bg,
-.cup__bg {
-  height: 300px;
-  background-size: cover;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
-
-:root {
-  --font-title: "Fraunces", serif;
-  --font-text: "Barlow", sans-serif;
-  --grayish-blue: hsl(210, 4%, 67%);
-  --dark-grayish-blue: hsl(232, 10%, 55%);
-  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
-  --dark-desaturated-cyan: hsl(167, 40%, 24%);
-  --dark-blue: hsl(198, 62%, 26%);
-  --dark-moderate-cyan: hsl(168, 34%, 41%);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: var(--font-text);
-  font-size: 18px;
-  color: var(--dark-grayish-blue);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: var(--font-title);
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  display: flex;
-}
-
-li {
-  list-style: none;
 }
 
 header {
@@ -210,6 +101,11 @@ nav ul li:last-of-type a {
   display: flex;
 }
 
+.cta__section div,
+.services__section div {
+  width: 50%;
+}
+
 .cta__section--wrapper {
   margin: 120px auto;
   max-width: 400px;
@@ -253,16 +149,10 @@ nav ul li:last-of-type a {
   background-size: contain;
 }
 
-/********** SERVICE SECTION **********/
-
-.services__section {
-  display: grid;
-}
-
 .graphic__section {
   background-image: url("../images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: contain;
   background-color: #a1decf;
   height: 475px;
@@ -270,13 +160,13 @@ nav ul li:last-of-type a {
 }
 
 .photography__section {
-  background-position: top;
-  background-size: cover;
+  background-image: url("../images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   background-color: #5eccff;
   height: 475px;
   position: relative;
-  background-image: url("../images/desktop/image-photography.jpg");
-  background-repeat: no-repeat;
 }
 
 .services__section--wrapper {
@@ -318,44 +208,38 @@ nav ul li:last-of-type a {
   text-align: center;
 }
 
-/********** CLIENT SECTION **********/
-
 .client__section {
-  padding: 60px 0;
-}
-
-.client__section--wrapper {
-  display: grid;
-}
-
-.client__section--testimonial {
-  width: 100%;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-}
-
-.client__section--testimonial:last-child {
-  margin-bottom: 0px;
+  padding: 120px 0;
 }
 
 .client__section h3 {
   text-align: center;
   margin-bottom: 64px;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.client__section--wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.client__section--testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
 }
 
 .client__section--testimonial img {
   align-self: center;
-  max-width: 90px;
+  max-width: 100px;
   border-radius: 100%;
 }
 
 .client__section--testimonial-text {
   text-align: center;
-  margin: 54px 0;
+  margin: 64px 0;
   color: var(--very-dark-desaturated-blue);
 }
 
@@ -380,32 +264,26 @@ nav ul li:last-of-type a {
   font-size: 16px;
 }
 
-/********** WORKS **********/
-
 .works__section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 212px 212px;
+  display: flex;
+  width: 100%;
 }
 
 .work {
+  width: 25%;
   font-size: 0;
 }
 
 .work img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
-
-/********** FOOTER **********/
 
 footer {
   background-color: #90d4c5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 footer svg {
