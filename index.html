@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="./src/styles/style.css" />
     <link
       rel="stylesheet"
-      href="./src/styles/mobile.css"
-      media="(max-width: 376px)"
+      href="./src/styles/desktop.css"
+      media="(min-width: 1024px)"
     />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
@@ -37,6 +37,12 @@
       <nav>
         <div class="container">
           <img src="./src/images/logo.svg" alt="Logo Sunnyside" />
+          <img
+            src="./src/images/icon-hamburger.svg"
+            alt="Logo Sunnyside"
+            class="mobile__menu--icon"
+          />
+
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -48,12 +54,13 @@
       <div class="hero">
         <div class="container">
           <h2>We are creatives</h2>
+          <img src="./src/images/icon-arrow-down.svg" alt="Logo Sunnyside" />
         </div>
       </div>
     </header>
     <main>
-      <section class="cta__section">
-        <div class="container cta__section--wrapper">
+      <section class="container cta__section">
+        <div class="cta__section--wrapper">
           <h3>
             Transform your <br />
             brand
@@ -63,13 +70,11 @@
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
-          <a href="#"> Learn more</a>
+          <a href="#" class="button button__underline--yellow"> Learn more</a>
         </div>
         <div class="egg__bg top"></div>
-      </section>
-      <section class="cta__section">
         <div class="cup__bg"></div>
-        <div class="container cta__section--wrapper">
+        <div class="cta__section--wrapper">
           <h3>
             Stand out to the right <br />
             audience
@@ -79,10 +84,10 @@
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
-          <a href="#">Learn more</a>
+          <a href="#" class="button button__underline--red">Learn more</a>
         </div>
       </section>
-      <section class="services__section">
+      <section class="container services__section">
         <div class="graphic__section">
           <div class="container services__section--wrapper">
             <h4>Graphic design</h4>
@@ -109,8 +114,8 @@
           <div class="client__section--testimonial">
             <img src="./src/images/image-emily.jpg" alt="client picture" />
             <p class="client__section--testimonial-text">
-              We put our trust in Sunnyside and they<br />delivered, making sure
-              our needs were met<br />and deadlines were always hit.
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
             </p>
             <div class="client__section--description">
               <p class="client__section--description-name">Emily R.</p>
@@ -122,9 +127,8 @@
           <div class="client__section--testimonial">
             <img src="./src/images/image-thomas.jpg" alt="client picture" />
             <p class="client__section--testimonial-text">
-              Sunnyside’s enthusiasm coupled with their<br />keen interest in
-              our brand’s success made it<br />a satisfying and enjoyable
-              experience.
+              Sunnyside’s enthusiasm coupled with their been interest in our
+              brand’s success made it a satisfying and enjoyable experience.
             </p>
             <div class="client__section--description">
               <p class="client__section--description-name">Thomas S.</p>
@@ -136,8 +140,8 @@
           <div class="client__section--testimonial">
             <img src="./src/images/image-jennie.jpg" alt="client picture" />
             <p class="client__section--testimonial-text">
-              Incredible end result! Our sales increased<br />over 400% when we
-              worked with Sunnyside.<br />Highly recommended!
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
             </p>
             <div class="client__section--description">
               <p class="client__section--description-name">Jennie F.</p>
@@ -175,10 +179,16 @@
           fill-rule="nonzero"
         />
       </svg>
-      <ul>
+      <ul class="footer__list--menu">
         <li>About</li>
         <li>Services</li>
         <li>Projects</li>
+      </ul>
+      <ul class="footer__list--social">
+        <li><img src="./src/images/icon-facebook.svg" alt="facebook" /></li>
+        <li><img src="./src/images/icon-instagram.svg" alt="instagram" /></li>
+        <li><img src="./src/images/icon-twitter.svg" alt="twitter" /></li>
+        <li><img src="./src/images/icon-pinterest.svg" alt="pinterest" /></li>
       </ul>
       <div class="attribution">
         Challenge by

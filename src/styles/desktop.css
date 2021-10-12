@@ -1,0 +1,72 @@
+/********** NAV SECTION **********/
+
+.mobile__menu--icon {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+}
+
+/********** HERO SECTION **********/
+
+header .hero {
+  background-size: contain;
+  min-height: 600px;
+}
+
+.hero h2 {
+  margin-top: 160px;
+}
+
+/********** CTA SECTION **********/
+
+.cta__section {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+}
+
+.top {
+  grid-area: unset;
+}
+
+.cta__section--wrapper {
+  text-align: left;
+  margin: 120px 80px;
+  width: auto;
+}
+
+/********** SERVICE SECTION **********/
+
+.services__section {
+  grid-template-columns: 1fr 1fr;
+}
+
+/********** CLIENT SECTION **********/
+
+.client__section {
+  padding: 120px 0;
+}
+
+.client__section--testimonial {
+  margin-bottom: 0px;
+}
+
+.client__section--wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+/********** WORKS **********/
+
+.works__section {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+/********** FOOTER **********/
+
+footer {
+  padding: 50px 0;
+}
