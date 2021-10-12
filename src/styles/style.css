@@ -78,9 +78,10 @@ nav ul li:last-of-type a {
   margin-left: 50px;
   font-size: 15px;
   color: #333;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 1);
   padding: 15px 24px;
   border-radius: 25px;
+  transition: 0.4s;
 }
 
 /********** HERO SECTION **********/
@@ -162,6 +163,7 @@ header .hero {
   border-radius: 15px;
   background-color: rgba(249, 212, 0, 0.3);
   z-index: -1;
+  transition: 0.4s;
 }
 
 .button__underline--red::after {
@@ -174,6 +176,7 @@ header .hero {
   border-radius: 15px;
   background-color: rgba(254, 120, 102, 0.3);
   z-index: -1;
+  transition: 0.4s;
 }
 
 .egg__bg {
@@ -373,6 +376,8 @@ footer svg path {
   color: var(--dark-moderate-cyan);
   font-size: 16px;
   margin-bottom: 60px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .footer__list--social {
@@ -383,4 +388,10 @@ footer svg path {
 .footer__list--social li {
   color: var(--dark-moderate-cyan);
   margin-bottom: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.footer__list--social li svg path {
+  transition: 0.4s;
 }
