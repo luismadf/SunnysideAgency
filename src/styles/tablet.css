@@ -1,0 +1,23 @@
+/********** CTA SECTION **********/
+
+.cta__section {
+  grid-template-rows: 4fr 3fr 4fr 3fr;
+}
+
+.egg__bg {
+  background-size: contain;
+}
+
+.cup__bg {
+  background-size: contain;
+}
+
+/********** SERVICE SECTION **********/
+
+.graphic__section {
+  background-size: contain;
+}
+
+.photography__section {
+  background-size: contain;
+}

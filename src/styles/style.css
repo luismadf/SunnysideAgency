@@ -211,6 +211,7 @@ header .hero {
   background-color: #8ed5c7;
   height: 475px;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 .photography__section {
