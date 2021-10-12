@@ -50,6 +50,8 @@ li {
   margin: 0 auto;
 }
 
+/********** NAV SECTION **********/
+
 header {
   background-color: #3ebfff;
 }
@@ -198,6 +200,10 @@ header .hero {
   display: grid;
 }
 
+.container.services__section {
+  width: 100%;
+}
+
 .graphic__section {
   background-image: url("../images/desktop/image-graphic-design.jpg");
   background-position: top;
@@ -326,6 +332,10 @@ header .hero {
   grid-template-rows: 212px 212px;
 }
 
+.container.works__section {
+  width: 100%;
+}
+
 .work {
   font-size: 0;
 }
@@ -343,11 +353,11 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 
 footer svg {
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 footer svg path {
@@ -356,6 +366,7 @@ footer svg path {
 
 .footer__list--menu {
   width: 80%;
+  max-width: 400px;
 }
 
 .footer__list--menu li {
@@ -366,6 +377,7 @@ footer svg path {
 
 .footer__list--social {
   width: 50%;
+  max-width: 250px;
 }
 
 .footer__list--social li {
